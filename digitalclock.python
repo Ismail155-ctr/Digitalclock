@@ -1,0 +1,10 @@
+import time
+import datetime
+def digital_clock():
+    while True:
+        now = datetime.datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        print(f"Current Time: {current_time}", end='\r')
+        time.sleep(1) # Update the time every second
+if __name__ == "__main__":
+    digital_clock()
